@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void launch(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
-        intent.putExtra("address", "Tom & Jerry's home");
+        intent.putExtra("person", new Person("Tom", 12));
         startActivity(intent);
     }
 }
