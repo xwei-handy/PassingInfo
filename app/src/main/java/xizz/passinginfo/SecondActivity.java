@@ -11,7 +11,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         Intent intent = getIntent();
-        Person person = (Person) intent.getSerializableExtra("person");
+        Person person = intent.getParcelableExtra("person");
         TextView display = (TextView) findViewById(R.id.textView);
         display.setText(person.toString());
     }
